@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="ptBR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Cronômetro</title>
 </head>
-<body>
-    <h1>Cronômetro</h1>
-    <button onclick="iniciar()">Iniciar</button>
-    <button onclick="pausar()">Pausar</button>
-    <button onclick="parar()">Parar</button>
 
-    <h2 id="relogio">00:00:00</h2>
-    
+<body>
+
+    <div class="container">
+        <h1>Cronômetro</h1>
+        <p id="relogio">00:00:00</p>
+        <button class="btn" onclick="iniciar()">Iniciar</button>
+        <button class="btn" onclick="pausar()">Pausar</button>
+        <button class="btn" onclick="parar()">Parar</button>
+
+     
+    </div>
+
+
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px
+}
+
+body{
+    font-family: 'Oswald';
+    color: #FFF2F9;
+    background-color: black;
+    text-align: center  ;
+    
+}
+
+.container{
+    background-color: #323232;
+    margin: auto;
+    margin: auto;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* CSS */
+.btn {
+    display: block;
+    width: 80%;
+    margin: auto;
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-image: linear-gradient(92.88deg, #FA4EAB 9.16%, #FE83C6 43.89%);
+    border-radius: 10px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFF2F9;
+    cursor: pointer;
+    font-size: 18px;
+    height: 64px;
+    text-align: center;
+    transition: all .5s;
+}
+
+#relogio{
+    font-size: 48px;
+}
