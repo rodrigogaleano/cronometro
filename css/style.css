@@ -14,36 +14,29 @@ body{
 
 .content{
     width: 100vw;
-height: 100vh;
-
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .container{
-
-    width: 300px;
-
-
-
     background-color: #323232;
+    width: 300px;
     margin: auto;
- 
-
     padding-top: 30px;
     padding-right: 15px;
     padding-left: 15px;
     padding-bottom: 30px;
     border-radius: 10px;
     box-shadow: rgb(56, 239, 125, 0.4) -5px 5px, rgb(0, 218, 139, 0.3) -10px 10px, rgb(0, 197, 147, 0.2) -15px 15px,  rgb(0, 175, 148, 0.1) -20px 20px, rgb(17, 153, 142, 0.05) -25px 25px;
-
-    /* background-image: linear-gradient(to right top, #38ef7d, #00da8b, #00c593, #00af94, #11998e); */
 }
 
+#relogio{
+    padding: 10px;
+    font-size: 62px;
+}
 
-
-/* CSS */
 .btn {
     width: 80%;
     margin: auto;
@@ -57,15 +50,18 @@ align-items: center;
     height: 64px;
     text-align: center;
     transition: all .5s;
-
-    background: #11998e;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+    background: #11998e;
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e); 
+    background: linear-gradient(to right, #38ef7d, #11998e);
 }
 
-#relogio{
-    padding: 10px;
-    font-size: 62px;
+.socialmedia li{
+    display: inline-block;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.socialmedia img{
+    height: 24px;
 }

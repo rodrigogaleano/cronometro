@@ -7,49 +7,47 @@ var segundos = 0;
 
 var tempo = 1000; //A variável tempo armazena um segundo (1000milisegundos)
 var cronometro; //Responsável pelo cronômetro
-var rodando = false; //Verifica se o cronometro está rodando ou não
+var rodando = false; //Essa variável armazena se o cronometro está rodando ou não, começa em false
 
-// ---------- FUNÇÕES ----------
+// ---------- FUNCÕES ----------
 
-
-function iniciar() {
-    if (rodando == false){
-        cronometro = setInterval(() => timer(), tempo);
-        rodando = true;
-    }else{
-        //alert('O cronômetro já está rodando');
-    }
-    
+function iniciar() { //Play
+    if (rodando == false){ //Verifica se o crônometro está em funcionamento para saber se é necessário startar
+        rodando = true; //Armazena que o cronômetro está rodando
+        cronometro = setInterval(() => timer(), tempo); //Chama a função timer
+    }    
 }
 
-function pausar() {
-    clearInterval(cronometro);
-    rodando = false;
-
+function pausar() { //Pause
+    clearInterval(cronometro); //Pausa o cronômetro
+    rodando = false; //Armazena que o cronômetro não está rodando
 }
 
-function parar() {
-    clearInterval(cronometro);
- 
+function parar() { //Stop
+    rodando = false; //Armazena que o cronômetro não está rodando
+    clearInterval(cronometro); //Pausa o cronômetro
+
+    //Zera as variáveis
     hora = 0;
     minutos = 0;
     segundos = 0;
-    rodando = false
-    document.getElementById('relogio').innerText = '00:00:00'
+
+    document.getElementById('relogio').innerText = '00:00:00'; //Altera o display do relógio para o padrão
 }
 
-function timer() {
-    segundos++;
-    if (segundos == 60){
+function timer() { //Timer
+    segundos++; //Incrementa os segundos a cada vez que entra na função
+    if (segundos == 60){ // Adiciona minuto
         segundos = 0;
         minutos++
-        if (minutos == 60){
+        if (minutos == 60){ // Adiciona hora
             minutos = 0;
             hora++;
         }
     }
   
-    var format = (hora < 10 ? '0' + hora : hora) + ':' + (minutos < 10 ? '0' + minutos : minutos) + ':' + (segundos < 10 ? '0' + segundos : segundos)
-    document.getElementById('relogio').innerText = format
-    return format;
+    //Retorna o display formatado
+    var display = (hora < 10 ? '0' + hora : hora) + ':' + (minutos < 10 ? '0' + minutos : minutos) + ':' + (segundos < 10 ? '0' + segundos : segundos)
+    document.getElementById('relogio').innerText = display
+    return display;
 }
