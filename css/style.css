@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 *{
     margin: 0px;
@@ -6,32 +6,48 @@
 }
 
 body{
-    font-family: 'Oswald';
-    color: #FFF2F9;
+    font-family: 'Roboto', sans-serif;
+    color: white;
     background-color: black;
-    text-align: center  ;
-    
+    text-align: center;
 }
 
+.content{
+    width: 100vw;
+height: 100vh;
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
 .container{
+
+    width: 300px;
+
+
+
     background-color: #323232;
     margin: auto;
-    margin: auto;
-    width: 300px;
-    padding: 10px;
+ 
+
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 30px;
     border-radius: 10px;
+    box-shadow: rgb(56, 239, 125, 0.4) -5px 5px, rgb(0, 218, 139, 0.3) -10px 10px, rgb(0, 197, 147, 0.2) -15px 15px,  rgb(0, 175, 148, 0.1) -20px 20px, rgb(17, 153, 142, 0.05) -25px 25px;
+
+    /* background-image: linear-gradient(to right top, #38ef7d, #00da8b, #00c593, #00af94, #11998e); */
 }
+
 
 
 /* CSS */
 .btn {
-    display: block;
     width: 80%;
     margin: auto;
-
-    margin-bottom: 10px;
-    margin-top: 10px;
-    background-image: linear-gradient(92.88deg, #FA4EAB 9.16%, #FE83C6 43.89%);
+    margin-top: 15px;
     border-radius: 10px;
     border-style: none;
     box-sizing: border-box;
@@ -41,8 +57,15 @@ body{
     height: 64px;
     text-align: center;
     transition: all .5s;
+
+    background: #11998e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
 #relogio{
-    font-size: 48px;
+    padding: 10px;
+    font-size: 62px;
 }
