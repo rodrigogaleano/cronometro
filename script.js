@@ -22,9 +22,10 @@ function iniciar() { //Play
         cronometro = setInterval(() => timer(), tempo); //Chama a função timer
 
         //Estilo dos botões
-        btn_iniciar.style = 'transform: scale(1.1);'
-        btn_pausar.style = 'transform: scale(1.0);'
-        btn_zerar.style = 'color: linear-gradient(to right, #38ef7d, #11998e);'
+        btn_iniciar.style = 'transform: scale(1.1);';
+        btn_pausar.style = 'transform: scale(1.0);';
+        btn_pausar.innerText = 'Pausar';
+        btn_zerar.style = 'color: linear-gradient(to right, #38ef7d, #11998e);';
     }
 }
 
@@ -34,9 +35,10 @@ function pausar() { //Pause
         rodando = false; //Armazena que o cronômetro não está rodando
 
         //Estilo dos botões
-        btn_iniciar.style = 'transform: scale(1.0);'
-        btn_pausar.style = 'transform: scale(1.1);'
-        btn_zerar.style = 'color: linear-gradient(to right, #38ef7d, #11998e);'
+        btn_iniciar.style = 'transform: scale(1.0);';
+        btn_pausar.style = 'transform: scale(1.1);';
+        btn_pausar.innerText = 'Pausado';
+        btn_zerar.style = 'color: linear-gradient(to right, #38ef7d, #11998e);';
     }
 }
 
@@ -52,6 +54,7 @@ function zerar() { //Stop
     //Estilo dos botões
     btn_iniciar.style = 'transform: scale(1.0);'
     btn_pausar.style = 'transform: scale(1.0);'
+    btn_pausar.innerText = 'Pausar';
     btn_zerar.style = 'background: linear-gradient(to right, #f85032, #e73827);'
 
     document.getElementById('relogio').innerText = '00:00:00'; //Altera o display do relógio para o padrão
