@@ -1,6 +1,6 @@
 <h1 align="center">Cronômetro</h1>
 
-Você pode acessar o projeto através deste <a href="https://rodrigogaleano.github.io/cronometro/" target="_blank">link</a>.
+Você pode acessar o projeto através deste <a href="https://rodrigogaleano-cronometro.vercel.app/" target="_blank">link</a>.
 
 <p align="center">
  <a href="#tecnologias">Tecnologias</a> •
